@@ -9,9 +9,11 @@ if(nota >= media){
     document.write('Reprovado');
 }*/
 
-// &&, ||, !
+// && - True se todas forem True 
+// || - Precisa somente uma ser True
+// ! - Negação, inverte o valor - se for true inverte para false
 
-if(2 == 2 && 4 == 4 && 'a' != 'b'){
+if(!(2>3)){
     document.write('Verdadeiro');
 } else {
     document.write('Falso');
