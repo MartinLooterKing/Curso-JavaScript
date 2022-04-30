@@ -1,7 +1,7 @@
 //+, -, /, %, *, ++, --
 
-const num1 = prompt('Digite o valor A:');
-const num2 = prompt('Digite o valor B:');
+let num1 = prompt('Digite o valor A:');
+let num2 = prompt('Digite o valor B:');
 
 num1 = parseInt(num1);
 num2 = parseInt(num2);
