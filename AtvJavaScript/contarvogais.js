@@ -1,4 +1,4 @@
-const vowels = ['a' || 'A', 'e' || 'E', 'i' || 'I', 'o' || 'O', 'u' || 'U'];
+const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']; 
 function countVowel(word){
     let count = 0;
 

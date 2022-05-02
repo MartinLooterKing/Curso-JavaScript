@@ -1,7 +1,7 @@
-const vowels = ['a' || 'A', 'e' || 'E', 'i' || 'I', 'o' || 'O', 'u' || 'U']; 
+const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']; 
 function makeReport(report){
        
-    let data = [{word: report, reverseWord: "", countVowels: count = 0}];
+    let data = [{word: report, reverseWord: "", countVowels: 0}];
 
     console.log(`A palavra é: ${data[0].word}`);
 
@@ -14,7 +14,7 @@ function makeReport(report){
     
     for(let letter of report){
         if(vowels.includes(letter)){
-            count++;
+            data[0].countVowels++;
             
         }
         
@@ -23,4 +23,4 @@ function makeReport(report){
    
 }
 
-makeReport('salve');
+makeReport('sAlva');
