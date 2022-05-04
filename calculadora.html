@@ -8,7 +8,7 @@
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-		<script language="text/javascript" src="calculadora.js"></script>
+		<script language="javascript" src="calculadora.js"></script>
 	</head>
 
 	<body>
@@ -22,11 +22,11 @@
 
 			<div class="row">
 				<div class="col-md-4">
-					<input type="text" class="form-control" placeholder="Digite um número" />
+					<input id="num1" type="text" class="form-control" placeholder="Digite um número" />
 				</div>
 
 				<div class="col-md-4">
-					<select class="form-control">
+					<select id="operacao" class="form-control">
 						<option value="">--Selecione uma operação</option>
 						<option value="1">Subtração</option>
 						<option value="2">Adição</option>
@@ -36,7 +36,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<input type="text" class="form-control" placeholder="Digite um número"/>
+					<input type="text" id="num2" class="form-control" placeholder="Digite um número"/>
 				</div>
 			</div>
 
@@ -48,14 +48,14 @@
 				<div class="col-md-4"></div>
 
 				<div class="col-md-4">
-					<button type="button" class="btn btn-lg btn-primary pull-right">Calcular</button>
+					<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular()">Calcular</button>
 				</div>
 			</div>
 
 			<hr />
 
 			<div class="well">
-				Resultado: <input type="text" class="form-control" readonly/>
+				Resultado: <input id="resultado" type="text" class="form-control" readonly/>
 			</div>
 		</div>
 	</body>
